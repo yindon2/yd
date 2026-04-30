@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <script>
+  // 如果网址里没有 ?v=... 这样的参数，就自动加上当前时间戳并刷新
+  if (!window.location.search.includes('v=')) {
+    window.location.search = 'v=' + Date.now();
+  }
+</script>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
